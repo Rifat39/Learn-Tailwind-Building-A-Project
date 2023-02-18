@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#131313",
+              grey: "#4E4E4E",
+              white: "#FFFFFF",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <!-- Sticky navbar -->
+      <nav class="bg-yellow h-20 fixed top-0 right-0 left-0">
+        <div
+          class="flex justify-between h-20 items-center w-full max-w-7xl mx-auto px-5 font-bebas"
+        >
+          <h1 class="text-2xl">Jaka Naka Production</h1>
+          <ul class="flex text-lg gap-8">
+            <li>About Us</li>
+            <li>Our Movies</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- background image -->
+      <section class="h-screen pt-20 bg-[url('images/banner.jpg')] bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto flex items-center px-2">
+          <div class="font-bebas">
+            <h2 class="text-white text-lg">Movie production studio</h2>
+            <h1 class="text-white text-7xl">Films made to</h1>
+            <h1 class="text-yellow text-7xl">Perfection</h1>
+            <p class="font-montserrat text-white max-w-lg mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <button
+              class="font-bebas border-2 border-white py-2 px-3 text-white hover:bg-yellow hover:border-yellow hover:text-black transition-all"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="py-40 px-5">
+        <div class="border-2 border-black w-full max-w-7xl mx-auto">
+          <div class="md:flex p-5 mb-10">
+            <div
+              class="md:w-1/2 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end"
+            >
+              <h1
+                class="text-2xl font-bebas bg-white text-black w-full mx-5 text-center py-3 rounded-md -mb-7 shadow-lg"
+              >
+                23 years of experience
+              </h1>
+            </div>
+            <div class="md:w-1/2 p-5 font-bebas">
+              <h2 class="text-lg">About Us</h2>
+              <h1 class="text-7xl">Filming Experience</h1>
+              <p class="font-montserrat mb-10">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia dolore explicabo aperiam amet totam fugit temporibus
+                quos, perspiciatis, pariatur expedita, distinctio eaque nostrum
+                qui provident!
+              </p>
+              <button
+                class="font-bebas border-2 border-black py-2 px-3 text-black hover:bg-yellow hover:border-yellow hover:text-black transition-all"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 p-5 gap-5">
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our movies -->
+      <section class="bg-grey py-12 px-5">
+        <div class="w-full max-w-7xl mx-auto mb-10">
+          <h2 class="text-white font-bebas">Our Movies</h2>
+          <div class="flex justify-between items-center">
+            <h1 class="text-7xl text-white font-bebas">Movies Collection</h1>
+            <button
+              class="font-bebas border-2 border-white py-2 px-3 text-white hover:bg-yellow hover:border-yellow hover:text-black transition-all"
+            >
+              See more Movies
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 w-full max-w-7xl mx-auto gap-5"
+        >
+          <div
+            class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5"
+          >
+            <div
+              class="bg-[url('images/inception.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center group transition-all"
+            >
+              <h1
+                class="text-red-500 font-bebas text-4xl hidden group-hover:block"
+              >
+                Inception
+              </h1>
+            </div>
+          </div>
+          <div
+            class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5"
+          >
+            <div
+              class="bg-[url('images/fractured.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center group transition-all"
+            >
+              <h1
+                class="text-green-700 font-bebas text-4xl hidden group-hover:block"
+              >
+                Fractured
+              </h1>
+            </div>
+          </div>
+          <div
+            class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5"
+          >
+            <div
+              class="bg-[url('images/tenet.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center group transition-all"
+            >
+              <h1
+                class="text-red-700 font-bebas text-4xl hidden group-hover:block"
+              >
+                Tenet
+              </h1>
+            </div>
+          </div>
+          <div
+            class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5"
+          >
+            <div
+              class="bg-[url('images/interstellar.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center group transition-all"
+            >
+              <h1
+                class="text-red-900 font-bebas text-4xl hidden group-hover:block"
+              >
+                Interstellar
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 px-5">
+        <div class="w-full max-w-7xl mx-auto mb-10">
+          <h2 class="text-black font-bebas text-center">Services</h2>
+          <h1 class="text-black font-bebas text-center text-7xl mb-20">
+            What we offer
+          </h1>
+          <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-10">
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/film.png" alt="" />
+              <h2 class="text-lg font-bebas">Studio Production</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/camera.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/count-down.png" alt="" />
+              <h2 class="text-lg font-bebas">movie production</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/3d-glasss.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/director-chair.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/theater.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/rim.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="h-[300px] border-2 border-black flex justify-center items-center flex-col hover:bg-yellow transition-all"
+            >
+              <img src="images/icons/cut-board.png" alt="" />
+              <h2 class="text-lg font-bebas">movies director</h2>
+              <p class="pt-5 text-center font-montserrat px-5">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="sm:h-[550px] md:h-[400px] mt-20 bg-[url('images/footer-bg.jpg')] bg-cover"
+    >
+      <div class="w-full max-w-7xl mx-auto text-center text-white">
+        <h1 class="font-bebas text-7xl pt-16">jhaka naka production</h1>
+        <h2 class="font-bebas text-2xl pt-2">next level experience</h2>
+        <p class="pt-8 font-montserrat">
+          Feugiat nibh litora semper proin nullam facilisi <br />
+          volutpat ex ullamcorper.
+        </p>
+        <p class="pt-20 font-montserrat">
+          Copyright © 2021 Jhaka Naka Production, All rights reserved. Present
+          by Mir Hussain
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
